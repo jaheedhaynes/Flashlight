@@ -10,12 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+var isLightOn = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        view.backgroundColor = .systemTeal
+        
+        
+       
     }
 
+    @IBAction func lightSwitch(_ sender: UISwitch) {
+        isLightOn = !isLightOn
 
+
+    }
+    
 }
 
